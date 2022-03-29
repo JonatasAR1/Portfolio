@@ -3,81 +3,187 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Portfólio</title>
+    <title>Portfólio - JonatasAR</title>
   </head>
   <body>
 
-    <header class="Header">
-      <div class="Header_container">
-        <div class="Logo">
-          <h1>Jonatas</h1>
+    <div class="mob">
+      <div class="bars-mobile">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+      </div><!--bars-mobile-->
+  
+  
+      <header class="header delay">
+        <div class="header_container">
+          
+          <div class="logo">
+            <h2>JonatasAR</h2>
+          </div>
+  
+          <nav class="desktop">
+            <ul class="menu">
+              <li><a href="#home">Início</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#conhecimentos">Conhecimentos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  
+      <div class="mobile">
+        <aside class="sidebars">    
+          <nav>
+            <ul>
+              <li class="menu-item"><a href="#home" class="menu-link">Início</a></li>
+              <li class="menu-item"><a href="#about" class="menu-link">Sobre</a></li>
+              <li class="menu-item"><a href="#project" class="menu-link">Projetos</a></li>
+              <li class="menu-item"><a href="#services" class="menu-link">Serviços</a></li>
+              <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+            </ul>
+          </nav>
+        </aside><!--sidebars-->
+      </div><!--mobile-->
+  
+      <main class="main container delay1" id="home">
+        <div class="main_text">
+          <h3>Olá, eu sou o </h3>
+          <h1>Jonatas Rocha</h1>
+          <strong>Desenvolvedor Front-End e Web designer.</strong>
+          <a href="#" class="button_main">Linkedin</a>
+        </div>
+        <div class="main_images">
+          <img src="/assets/Avatar.svg" alt="Avatar">
+        </div>
+        <div class="scrool_img">
+          <img class="scroll" src="/assets/mouse.svg" alt="scroll">
+        </div>
+      </main>
+  
+      <section class="about" id="about">
+        <div class="about_container container delay1">
+          <div class="about_img">
+            <img data-tilt src="/assets/about_img.svg" alt="">
+          </div>
+  
+          <div class="about_text delay3">
+            <h1>Sobre mim</h1>
+            <p>Meu nome é Jonatas Rocha, tenho 20 anos, moro no Brasil, mais especificamente em MG - Belo horizonte. Atualmente estou estudando pra aprimorar como programador Front-End.</p>
+            <p>Iniciei nessas áreas em 2021. Desde então venho dedicando para melhorar a cada dia como desenvolvedor.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="projects container delay1" id="project">
+        <h1>Projetos</h1>
+  
+        <div class="wrapper-projects">
+          <div class="intervalCard">
+            <div class="box-project ">
+              <h3>Em Breve</h3>
+              <p>Estou desenvolvendo os projetos.</p>
+            </div>
+          </div>
+          <div class="intervalCard">
+            <div class="box-project ">
+              <h3>Em Breve</h3>
+              <p>Estou desenvolvendo os projetos.</p>
+            </div>
+          </div>
+          <div class="intervalCard">
+            <div class="box-project ">
+              <h3>Em Breve</h3>
+              <p>Estou desenvolvendo os projetos.</p>
+            </div>
+          </div>
+        </div>
+        <a class="intervalCard" href="">Repositórios no Github</a>
+      </section>
+  
+      <section class="services delay1" id="services">
+        <div class="container">
+          <h1>Serviços</h1>
+          <div class="box-services intervalCard">
+            <div class="box-service">
+              <img src="/assets/computer.svg" alt="Computador">
+              <h3>Criação de sites</h3>
+              <p>Desenvolvimento de landing pages, blogs é lojas virtuais.</p>
+            </div>
+            <div class="box-service intervalCard">
+              <img src="/assets/undraw_Responsive_re_e1nn 1.svg" alt="">
+              <h3>Sites Responsivos</h3>
+              <p>Os sites responsivos adaptam o tamanho das suas páginas ao tamanho das telas que estão sendo exibidos, para telas de smartphones</p>
+            </div>
+            <div class="box-service intervalCard">
+              <img src="/assets/Group.svg" alt="">
+              <h3>UI/UX Design</h3>
+              <p>Desenho de layouts que se adequam ao seu negócio de forma profissional e fiel no desenvolvimento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="conhecimentos container" id="conhecimentos">
+        <div class="conhecimentos_text delay1">
+          <h1>Conhecimentos</h1>
+          <div>
+            <p class="card-text" id="card-html5">
+              HTML5 é uma das primeiras e principais linguagens de marcação da web. O HTML serve, basicamente, para o desenvolvimento de páginas que contenham conteúdos simples, como textos, imagens, áudio, vídeos e etc.
+            </p>
+            <p class="card-text" id="card-css">
+              CSS é usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Pense na decoração da sua página.
+            </p>
+            <p class="card-text" id="card-sass">
+              O SASS é uma linguagem de extensão do CSS. A sua ideia é adicionar recursos especiais como variáveis, mixins, funções e operações e outras opções variadas que iremos comentar. O SASS tem como objetivo tornar o processo de desenvolvimento mais simples e eficiente.
+            </p>
+            <p class="card-text" id="card-javascript">
+              JavaScript é uma linguagem de programação de comportamento que permite a criação de conteúdos dinâmicos, controle de mídias e animações para deixar seu site mais interativo e interessante.
+            </p>
+            <p class="card-text" id="card-react">
+              React JS é uma biblioteca JavaScript para a criação de interfaces de usuário — ou UI (user interface).
+            </p>
+            <p class="card-text" id="card-styledcomponents">
+              Styled Components é uma biblioteca (lib) que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript.
+            </p>
+          </div>
         </div>
 
-        <ul class="menu">
-          <li><a href="">Início</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Conhecimentos</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <main class="Main">
-      <div class="Main_text">
-        <h3>Olá, eu sou o </h3>
-        <h1>Jonatas Rocha</h1>
-        <strong>Desenvolvedor Front-End e Web designer.</strong>
-        <a href="#" class="Button_main">Linkedin</a>
-      </div>
-      <div class="Main_images">
-        <img src="/assets/Avatar.svg" alt="Avatar">
-      </div>
-      <img class="scroll" src="/assets/mouse.svg" alt="scroll">
-    </main>
-
-    <section class="About">
-      <div class="About_container">
-        <img src="/assets/about_img.svg" alt="">
-
-        <div class="About_text">
-          <h1>Sobre mim</h1>
-          <p>Meu nome é Jonatas Rocha, tenho 20 anos, moro no Brasil, mais especificamente em MG - Belo horizonte. Atualmente estou estudando pra aprimorar como programador Front-End é Web designer.</p>
-          <p>Iniciei nessas áreas em 2020. Desde então venho dedicando para melhorar a cada dia como desenvolvedor.</p>
+        <div class="cards">
+          <div class="card intervalCard" id="html5">
+            <img src="/assets/html5.svg" alt="HTML5">
+          </div>
+          <div class="card intervalCard" id="css">
+            <img src="/assets/css.svg" alt="Css">
+          </div>
+          <div class="card intervalCard" id="sass">
+            <img src="/assets/sass.svg" alt="Sass">
+          </div>
+          <div class="card intervalCard" id="javascript">
+            <img src="/assets/javascript.svg" alt="JavaScript">
+          </div>
+          <div class="card intervalCard" id="react">
+            <img src="/assets/react.svg" alt="ReactJs">
+          </div>
+          <div class="card intervalCard" id="styledcomponents">
+            <img src="/assets/styledcomponents.svg" alt="Styled Components">
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="Projects">
-      <h1>Projects</h1>
-
-      <div class="wrapper">
-        <div class="box">
-          <h3>Em breve</h3>
-          <p>Estamos desenvolvendo os projetos.</p>
-        </div>
-        <div class="box">
-          <h3>Em breve</h3>
-          <p>Estamos desenvolvendo os projetos.</p>
-        </div>
-        <div class="box">
-          <h3>Em breve</h3>
-          <p>Estamos desenvolvendo os projetos.</p>
-        </div>
-        <div class="box">
-          <h3>Em breve</h3>
-          <p>Estamos desenvolvendo os projetos.</p>
-        </div>
-        <div class="box">
-          <h3>Em breve</h3>
-          <p>Estamos desenvolvendo os projetos.</p>
-        </div>
-        <div class="box">
-          <h3>Em breve</h3>
-          <p>Estamos desenvolvendo os projetos.</p>
-        </div>
-      </div>
-    </section>
+      </section>
+  
+      <footer class="delay1">
+        <p>® 2021 - Portfólio - JonatasAR </p>
+      </footer>
+    </div>
     
+    <script src="/Js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/Js/reveal.js"></script>
+    <script src="/Js/tilt.jquery.js"></script>
+
   </body>
 </html>
