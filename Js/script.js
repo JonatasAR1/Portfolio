@@ -28,16 +28,3 @@ listaSelecao.forEach(card =>{
 document.querySelector(".bars-mobile").addEventListener("click", () =>
     document.querySelector(".mob").classList.toggle("show-menu")
 );
-
-// Scrollbar 
-
-$(function() {
-  $('nav a').click(function() {
-    var href = $(this).attr("href");
-    var offSetTop = $(href).offset().top;
-
-    $('html, body').animate({'scrollTop':offSetTop},)
-    
-    return false;
-  })
-})
